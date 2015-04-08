@@ -1,0 +1,77 @@
+spicy,category_id,category_name,category_icon,name,price,lunch,count,description
+,appetizer,Appetizer,knife36.svg,Pot Sticker,$8.50,,6,Hand rolled Chinese pastry stuffed with a ginger-infused mixture of ground pork and Napa cabbage lightly pan-fried to a golden brown.
+,appetizer,Appetizer,knife36.svg,Steamed Vegetarian Pot Stickers,$8.50,,6,"A seasoned mixture of minced Shiitake mushrooms, Napa cabbage, tofu, and mung bean thread wrapped in a hand rolled thin Chinese pastry steamed and served in a bamboo basket."
+,appetizer,Appetizer,knife36.svg,Spring Rolls,$8.50,,4,"A light mixture of fresh shredded cabbage, celery, onions, and garlic encased in a thin crepe, deep-fried to a golden brown and served with Xiao Loong’s sweet & sour sauce and Chinese hot mustard."
+,appetizer,Appetizer,knife36.svg,Xiao Loong Bow,$9.95,,8,"Hand rolled thin Chinese pastry, generously stuffed with ginger marinated ground pork, then steamed 'til plump and juicy."
+,appetizer,Appetizer,knife36.svg,Prawns and Chinese Chive Dumplings,$9.95,,10,"Delicate Chinese hand rolled pastry filled with a mixture of rough chopped prawns, Chinese chives, and ginger.Cooked quickly in boiling hot water to seal in the juices."
+,appetizer,Appetizer,knife36.svg,Xiao Loong’s Pan-Pacific Wonton,$8.95,,8,"A flavorful mixture of crabmeat, cream cheese, and green onions encased in a thin Chinese pastry, deep-fried to a golden brown and served with Xiao Loong’s sweet & sour sauce and Chinese hot mustard."
+,appetizer,Appetizer,knife36.svg,House Wonton,$8.95,,10,"An aromatic mixture of ground pork and Chinese spices wrapped in a delicate Chinese pastry, deep-fried to a crispy golden brown and served with Xiao Loong’s sweet & sour sauce and Chinese hot mustard."
+,appetizer,Appetizer,knife36.svg,Chinese-Style Fried Calamari,$8.95,,,"Tender chunks of calamari, lightly fried in a thin flour coating, served with Xiao Loong’s sweet & sour sauce and Chinese hot mustard."
+,appetizer,Appetizer,knife36.svg,"Mu Shu (pork, beef, chicken, or vegetable)",$10.95,,,"A combination of thinly sliced cabbage, willow tree fungus, fluffed eggs, and your choice of shredded pork, sliced beef, diced chicken, or vegetables, sautéed in our house soy sauce accompanied by four house made hand-rolled pancakes, julienned scallions, and hoison sauce. Additional pancakes $0.75 each"
+,appetizer,Appetizer,knife36.svg,Mu Shu (prawns or lamb),$11.95,,,"A combination of thinly sliced cabbage, willow tree fungus, fluffed eggs, and your choice of shredded pork, sliced beef, diced chicken, or vegetables, sautéed in our house soy sauce accompanied by four house made hand-rolled pancakes, julienned scallions, and hoison sauce. Additional pancakes $0.75 each"
+yes,soup,Soup,bowl16.svg,Hot and Sour Soup,$8/$11/$13,,,"A Northern Chinese mixture of shredded chicken, shrimp, julieened shiitake mushrooms, tofu, peas, and willow tree fungus in a peppery and flavorful chicken broth finished with whipped eggs."
+,soup,Soup,bowl16.svg,Wonton Soup,$8/$11/$14,,,Our house pork wontons served in a rich chicken broth with spinach and sliced shiitake mushrooms.
+,soup,Soup,bowl16.svg,Sizzling Rice Soup,$8/$11/$15,,,"A fresh mélange of shredded chicken, shrimp, water chestnuts, sliced shiitake mushrooms, peas, and spinach in a light chicken broth topped with sizzling rice served tableside."
+,soup,Soup,bowl16.svg,Xiao Loong in the Garden,$8/$11/$16,,,"A mixture of shrimp, sliced shiitake mushrooms, spinach, and tomatoes, in a rich chicken broth finished with whipped eggs"
+,soup,Soup,bowl16.svg,Chicken and Shiitake Mushroom Soup,$8/$11/$17,,,"Sliced tender chicken breast with whole shiitake mushrooms, crisp Napa cabbage in a light, clear chicken broth."
+,soup,Soup,bowl16.svg,Nori Seaweed Soup,$8/$11/$18,,,"A mixture of spinach, shrimp, sliced shiitake mushrooms, and nori seaweed in a rich chicken broth finished with whipped eggs."
+yes,seafood,Seafood,fish1.svg,Xiao Loong’s Spicy Chili Prawns,$11.95,$7.50,,"Prawns stir-fried with chopped garlic, minced ginger, and our house chili sauce; a delightfully spicy and aromatic dish that must be tried."
+yes,seafood,Seafood,fish1.svg,Kung Pao Prawns,$11.95,$7.50,,"Tender prawns sautéed with roasted red hot peppers, green onion bulbs, bell peppers, white onions, and fresh roasted peanuts tossed in a spicy Kung Pao sauce."
+yes,seafood,Seafood,fish1.svg,Sichuan Dry Fried Prawns,$11.95,,,Light fluffy deep-fried prawns flash-fried and tossed with chili pods and a spicy garlic and ginger sauce.
+,seafood,Seafood,fish1.svg,Lobster Sauce Prawns,$11.95,$7.50,,"Tender prawns braised with fresh garlic, green peas, and finished with whipped eggs in a wine and  lobster-infused sauce."
+,seafood,Seafood,fish1.svg,Snow Peas and Prawns,$12.95,,,Fresh snow peas stir-fried quickly with tender prawns in a garlic wine sauce.
+,seafood,Seafood,fish1.svg,White Prawns,$11.95,,,"Tender prawns sautéed in a light garlic-infused wine sauce served atop blanched broccoli, a simple prawn dish that accentuates the essence of prawns."
+,seafood,Seafood,fish1.svg,Clay Pot Prawns and Tofu,$11.95,$7.50,,"Prawns and diced tofu simmered in white wine, garlic, peas, and mushrooms; served in a sizzling hot clay pot."
+,seafood,Seafood,fish1.svg,Three Ingredients,$12.95,,,"Tender prawns, whole scallops, and calamari with fresh snow peas sautéed in a light garlic wine sauce."
+,seafood,Seafood,fish1.svg,White Scallops,$12.95,,,"Whole large scallops sautéed in a light garlic-infused wine sauce served atop blanched broccoli, a simple scallop dish that accentuates the essence of scallops."
+yes,seafood,Seafood,fish1.svg,Spicy Dry Fried Calamari,$11.95,$7.50,,Deep-fried chunks of calamari flash-fried and tossed with a spicy ginger and garlic sauce.
+yes,seafood,Seafood,fish1.svg,Happy Family,$12.95,,,Assorted seafood and vegetables stir-fried with fresh ginger and garlic in a spicy wine sauce.
+yes,seafood,Seafood,fish1.svg,Spicy Lemon Pepper Prawns,$11.95,,,"Tender prawns stir-fried with sliced yellow onions, minced garlic, and a spicy lemon pepper mixture."
+yes,seafood,Seafood,fish1.svg,Xiao Loong’s Hot Braised Fish,A.Q,,,"Our daily fish topped with a rich spicy mixture of minced black mushrooms, water chestnuts, bamboo shoots, fresh ginger, chili, and garlic."
+,seafood,Seafood,fish1.svg,Xiao Loong’s Steamed Fish,A.Q,,,"Our daily fish steamed with julienned fresh ginger, chopped green onions and sliced shiitake mushrooms in our house Chinese wine sauce, all topped with smoking hot oil to draw the essence from the fresh aromatics."
+yes,seafood,Seafood,fish1.svg,Hunan Steamed Fish,A.Q,,,"Our daily fish steamed with roasted red hot peppers, fermented black beans, minced fresh ginger, and chopped garlic in our house Chinese wine sauce"
+,seafood,Seafood,fish1.svg,Shandong Braised Fish,A.Q,,,"Our daily fish braised with fresh vegetables, black mushrooms, and tofu chunks in a Chinese anise-infused pepper sauce."
+yes,beef_lamb_pork,"Beef, Lamb, Pork",,Mongolian Beef,$10.95,$6.95,,"Tender sliced beef sautéed with green onions, julienned yellow onions, and roasted red hot peppers in our house sauce served on a bed of crispy rice noodles."
+,beef_lamb_pork,"Beef, Lamb, Pork",,Xiao Loong Beef,$10.95,$6.95,,Sliced flank steak marinated in a garlic-infused sweet and peppery sauce stir-fried and placed on a bed of freshly chopped cabbage topped with toasted sesame seeds.
+yes,beef_lamb_pork,"Beef, Lamb, Pork",,Mandarin Beef,$10.95,,,Deep-fried sliced flank steak strips tossed with roasted red hot peppers and a spicy ginger garlic sauce.
+yes,beef_lamb_pork,"Beef, Lamb, Pork",,Kung Pao Beef,$10.95,$6.95,,"Xiao Loong’s spicy Kung Pao sauce coats a generous blend of sliced flank steak sautéed with roasted red hot  peppers, green onion bulbs, bell peppers, white onions, and fresh roasted peanuts."
+,beef_lamb_pork,"Beef, Lamb, Pork",,Broccoli Beef,$10.95,$6.95,,Sliced tender beef with a mixture of fresh broccoli flowerets quickly stir-fried in our house sauce.
+,beef_lamb_pork,"Beef, Lamb, Pork",,Snow Peas Beef,$10.95,,,Sliced tender beef with a mixture of fresh snow peas quickly stir-fried in our house soy sauce.
+,beef_lamb_pork,"Beef, Lamb, Pork",,Shiitake Mushroom Beef,$10.95,$6.95,,"A generous serving of whole Shiitake mushrooms stir-fried with sliced tender beef in our house sauce, a mushroom lover’s delight."
+yes,beef_lamb_pork,"Beef, Lamb, Pork",,Mongolian Lamb,$11.95,,,Tender sliced leg of lamb sautéed with green onions and roasted red hot peppers in our house sauce served on a bed of crispy rice noodles.
+yes,beef_lamb_pork,"Beef, Lamb, Pork",,Gao Lan,$11.95,$6.95,,"Thinly sliced leg of lamb marinated in Sichuan spices, then quickly sautéed to perfection and served with julienned scallions."
+yes,beef_lamb_pork,"Beef, Lamb, Pork",,Spicy Sichuan Harbor Pork,$10.95,,,"Julienned pork sautéed with water chestnuts, willow tree fungus, and fresh ginger in a spicy garlic sauce."
+,beef_lamb_pork,"Beef, Lamb, Pork",,Sweet and Sour Pork,$10.95,,,Tender chunks of lean pork deep-fried in batter and quickly tossed with onions and bell peppers in our tangy ginger-sweet and sour sauce.
+,beef_lamb_pork,"Beef, Lamb, Pork",,Shandong Shiitake Mushroom Pork,$10.95,,,"Julienned pork sautéed with Napa cabbage, whole shiitake mushrooms, and ginger served in our house sauce."
+yes,beef_lamb_pork,"Beef, Lamb, Pork",,Hunan Hot Pepper Pork,$10.95,,,Julienned pork stir-fried with jalapeno pepper and onions in a spicy Sichuan sauce.
+yes,chicken,Chicken,turkey7.svg,Spicy Dry Fried Chicken,$10.95,$6.95,,"Deep-fried battered chicken chunks tossed with Xiao Loong’s sweet garlic pepper sauce. A very aromatic dish with minced ginger, garlic, chili pods, and green onions."
+,chicken,Chicken,turkey7.svg,Lemon Chicken,$10.95,$6.95,,Golden fried sliced chicken breast with Xiao Loong’s sweet and tangy ginger lemon sauce topped with candied lemon zest and served over a bed of cabbage.
+yes,chicken,Chicken,turkey7.svg,Xiao Loong’s House Chicken,$10.95,$6.95,,Sliced chicken breast with roasted red hot peppers and fermented black beans in a garlic-infused tangy wine sauce.
+yes,chicken,Chicken,turkey7.svg,Cheng Bi Chicken,$10.95,,,Tender diced chicken sautéed with dried orange peel and roasted red hot peppers in our spicy garlic sauce.The hot wok draws the dried orange peel’s essential oils and imparts a citrus aroma to this delectable dish.
+,chicken,Chicken,turkey7.svg,Garlic Chicken,$10.95,$6.95,,"Diced chicken, minced garlic, sliced shiitake mushrooms, and water chestnuts stir-fried in our house soy sauce."
+,chicken,Chicken,turkey7.svg,Clay Pot Curry Chicken,$10.95,$6.95,,"Sliced chicken breast sautéed with yellow onions and bell peppers in our house blend of curry spices,  served in a sizzling hot clay pot."
+,chicken,Chicken,turkey7.svg,Black Bean Chicken,$10.95,$6.95,,Sliced chicken breast stir-fried with fresh broccoli and baby corn in a black bean sauce accented with garlic and ginger.
+yes,chicken,Chicken,turkey7.svg,Kung Pao Chicken,$10.95,$6.95,,"Diced chicken chunks sautéed with roasted red hot peppers, green onion bulbs, bell peppers, white onions,and fresh roasted peanuts tossed in our spicy Kung Pao sauce."
+,chicken,Chicken,turkey7.svg,Shiitake Mushrooms and Chicken,$10.95,,,A generous serving of whole shiitake mushrooms stir-fried with sliced chicken breast in our house sauce.
+,chicken,Chicken,turkey7.svg,Cashew Chicken,$10.95,$6.95,,"A mixture of fresh roasted cashews, diced chicken, green onion bulbs, bell peppers, and white onions stir-fried in our house sauce."
+yes,chicken,Chicken,turkey7.svg,Hunan Peanut Chicken,$10.95,,,"Tender seasoned diced chicken and roasted peanuts dry sautéed with roasted red hot chili, garlic, diced green hot peppers, minced bell peppers, and onions."
+,vegetables,Vegetables,broccoli.svg,Xiao Loong’s Vegetable Garden,$9.50,$6.95,,"Assorted fresh vegetables, stir-fried with chopped scallions and a light garlic-infused wine sauce."
+,vegetables,Vegetables,broccoli.svg,Stir-Fried Spinach and Mung Bean Thread,$10.50,,,"Fresh spinach and delicate mung bean threads, stir-fried with a garlic wine sauce."
+,vegetables,Vegetables,broccoli.svg,Fresh Spinach and Garlic,$10.50,,,Fresh spinach sautéed in a garlic wine sauce. A must for spinach lovers.
+yes,vegetables,Vegetables,broccoli.svg,Spicy Sichuan Garlic Eggplant,$10.50,$6.95,,"Fresh Japanese eggplant, braised with our spicy Sichuan garlic sauce."
+yes,vegetables,Vegetables,broccoli.svg,Dry Sautéed Green Beans or Asparagus,$10.5/$11.95,,,"Fresh green beans or asparagus, flash-fried and tossed with a mixture of fresh minced ginger, chopped garlic, minced preserved Chinese turnips, and roasted red hot peppers in our house soy sauce."
+,vegetables,Vegetables,broccoli.svg,Shitake Mushrooms and Tender Baby Bok Choy,$10.50,$6.95,,"Tender whole shitake mushrooms and fresh baby bok choy, stir-fried with a light wine-garlic sauce."
+yes,vegetables,Vegetables,broccoli.svg,Clay Pot Ma-Por Tofu,$10.50,$6.95,,"Diced tofu, braised with garlic and onions in a spicy Sichuan bean sauce, served table side in a sizzling hot clay pot."
+yes,vegetables,Vegetables,broccoli.svg,Family Style Chili Pepper Tofu,$10.50,$6.95,,"Chunks of tofu, sautéed with julienned vegetables, bell peppers, roasted red hot peppers, and mung bean threads in a light oyster sauce."
+,vegetables,Vegetables,broccoli.svg,Gai Lan,$11.00,,,"Fresh Chinese Broccoli blanched and sprinkled with sesame oil, served with oyster sauce on the side."
+,vegetables,Vegetables,broccoli.svg,Snow Pea Sprouts and Garlic,$12.00,,,Fresh outdoor grown large snow pea tips sautéed with garlic and green onions.
+,vegetables,Vegetables,broccoli.svg,Broccoli & Soft Tofu,$10.50,,,Soft tofu and broccoli simmered in a sliced garlic white sauce topped with nori and toasted sesame seeds.
+,fried_rice,Fried Rice,,Vegetable Fried Rice,$7.95,$7.95,,"Jasmine white rice wok-fried with diced vegetables, fluffed eggs, peas, diced carrots, and green onions."
+,fried_rice,Fried Rice,,"Chicken, Pork, or Beef Fried Rice",$7.95,$7.95,,"Jasmine white rice wok-fried with your choice of meat, fluffed eggs, peas, diced carrots, and green onions."
+,fried_rice,Fried Rice,,Shrimp or Combination Fried Rice,$8.95,$8.95,,"Jasmine white rice wok-fried with your choice of either shrimp, or a combination of chicken, beef, and shrimp, fluffed eggs, peas, diced carrots, and green onions."
+,mein_fun,Chow Mein and Chow Fun,Italian-food.svg,Vegetable Chow Mein or Chow Fun,$7.95,$7.95,,"Egg noodles or Chow fun noodles stir-fried with fresh vegetables including baby bok choy, snow peas, carrots, spinach, shiitake mushrooms, and green onions."
+,mein_fun,Chow Mein and Chow Fun,Italian-food.svg,"Chicken, Pork, or Beef Chow Mein or Chow Fun",$7.95,$7.95,,"Egg noodles or Chow Fun noodles stir-fried with your choice of meat, fresh assorted vegetables, and green onions."
+,mein_fun,Chow Mein and Chow Fun,Italian-food.svg,Shrimp or Combination Chow Mein or Chow Fun,$8.95,$8.95,,"Egg noodles or Chow Fun noodles stir-fried with your choice of either shrimp, or a combination of chicken, beef, and shrimp, fresh assorted vegetables, and green onions."
+,rice,Steamed Rice,rice2.svg,Steamed Jasmine White rice per person,$2.00,,,
+,rice,Steamed Rice,rice2.svg,Steamed Jasmine Brown rice per person,$2.00,,,
+,mein_fun,Chow Mein and Chow Fun,Italian-food.svg,Hong Kong-style crispy Chow Mein noodles add,$2.00,$1.50,,
