@@ -17,7 +17,10 @@ website.controller("indexCtrl", function($scope){
 	// })
 	$scope.templates = {
 		"carousel": "app/partials/carousel.html",
-		"menu": "app/partials/menu.html"
+		"menu": "app/partials/menu.html",
+		"about": "app/partials/about.html",
+		"storeInfo": "app/partials/storeInfo.html",
+
 	}	
 });
 
@@ -54,3 +57,17 @@ website.controller("menuCtrl",['$scope','$http',function($scope,$http){
 
 
 }])
+//--------------------------storeInfo-------------------------------------------
+website.controller("storeInfoCtrl",function($scope){
+	var lunchHour="11:30 to 2:30";
+	var dinnerHour="5:00 to 9:00";
+	var dinnerHourPlus="5:00 to 9:30"
+
+	$scope.storeHour = [
+						{day:"",lunchTime:"Lunch",dinnerTime:"Dinner"},
+						{day:"Monday",lunchTime:"closed",dinnerTime:dinnerHour},
+						{day:"Thuesday - Thursday",lunchTime:lunchHour,dinnerTime:dinnerHour},
+						{day:"Friday - Saturday",lunchTime:lunchHour,dinnerTime:dinnerHourPlus},
+						{day:"Sunday",lunchTime:"closed",dinnerTime:dinnerHourPlus},
+						]
+})

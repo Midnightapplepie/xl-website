@@ -1,11 +1,9 @@
-.fl-l{
-	float: left;
+.section-break{
+	height: 10vh;
+	width: 100%;
 }
 
-.fl-r{
-	float: right;
-}
-
-.dp-bl{
-	display: block;
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }

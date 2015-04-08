@@ -1,0 +1,26 @@
+<div ng-controller="storeInfoCtrl">
+<div class="container-fluid">
+	<h3 class="text-center">Store Hour</h3>
+	<div class="row">
+		<div ng-repeat="info in storeHour" class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<div class="col-xs-4 col-md-4 text-left">{{info.day}}</div>
+				<div class="col-xs-4 col-md-4 text-center">{{info.lunchTime}}</div>
+				<div class="col-xs-4 col-md-4 text-right">{{info.dinnerTime}}</div>
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row text-center">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<p class="bg-info">Phone: 415-753-5678</p>
+			<br>
+			<p>Address</p>
+			<p>250 West Portal Avenue</p>
+			<p>San Francisco, CA 9412</p>
+			<button class="btn">Get Direction</button>
+		</div>
+	</div>
+</div>
