@@ -10,11 +10,12 @@ website.controller("indexCtrl",["$scope","$location","$window",
   $scope.templates = [
                     {name:"carousel",navLink:false,text:""},
                     {name:"about",navLink:true,text:"About"},
-                    {name:"menu",navLink:true,text:"Menu"},
+                    {name:"menus",navLink:true,text:"Menus"},
                     {name:"storeInfo",navLink:true,text:"Store Hour"}
                     // {name:"contact",navLink:true,text:"Contact"}
                   ];
 
+  //this create $scope.templates object with uri so view can include them at ng-repeat 
   for(var i = 0; i < $scope.templates.length; i++){
     $scope.templates[i].location = "app/partials/" + $scope.templates[i].name + ".html";
     if ($scope.templates[i].navLink){
@@ -25,18 +26,7 @@ website.controller("indexCtrl",["$scope","$location","$window",
   $scope.goTo = function(template) {
     var id = template.name;
     var endLocation = $window.document.getElementById(id).offsetTop;
-
-    console.log(endLocation);
-    // $location.hash(id);
     $window.scrollTo(0,endLocation);
-    // if ($location.hash() !== newHash) {
-    //   console.log($location.hash());
-    //   $location.hash('anchor' + template.name);
-    // } else {
-    //   // call $anchorScroll() explicitly,
-    //   // since $location.hash hasn't changed
-    //   $anchorScroll();
-    // }
   };
 
 }]);
@@ -60,7 +50,6 @@ website.controller("menuCtrl",function($scope,$http){
 
 	$http.get('http://localhost:5000/menu').
 		success(function(data,status,headers,config){
-			console.log(data.menu);
 			$scope.categories = data.categories;
 			menu = data.menu;
 		}).
@@ -75,16 +64,24 @@ website.controller("menuCtrl",function($scope,$http){
 
 })
 //--------------------------storeInfo-------------------------------------------
-website.controller("storeInfoCtrl",function($scope){
-	var lunchHour="11:30 to 2:30";
-	var dinnerHour="5:00 to 9:00";
-	var dinnerHourPlus="5:00 to 9:30"
+website.controller("storeInfoCtrl",["$scope","mapService",function($scope,mapService){
+  var lunchHour="11:30 to 2:30";
+  var dinnerHour="5:00 to 9:00";
+  var dinnerHourPlus="5:00 to 9:30"
 
-	$scope.storeHour = [
-						{day:"",lunchTime:"Lunch",dinnerTime:"Dinner"},
-						{day:"Monday",lunchTime:"closed",dinnerTime:dinnerHour},
-						{day:"Thuesday - Thursday",lunchTime:lunchHour,dinnerTime:dinnerHour},
-						{day:"Friday - Saturday",lunchTime:lunchHour,dinnerTime:dinnerHourPlus},
-						{day:"Sunday",lunchTime:"closed",dinnerTime:dinnerHourPlus},
-						]
-})
+  $scope.storeHour = [
+            {day:"",lunchTime:"Lunch",dinnerTime:"Dinner"},
+            {day:"Monday",lunchTime:"closed",dinnerTime:dinnerHour},
+            {day:"Thuesday - Thursday",lunchTime:lunchHour,dinnerTime:dinnerHour},
+            {day:"Friday - Saturday",lunchTime:lunchHour,dinnerTime:dinnerHourPlus},
+            {day:"Sunday",lunchTime:"closed",dinnerTime:dinnerHourPlus},
+            ]
+
+  var map = mapService.mapInit();
+
+  $scope.getDirection = function(){
+    mapService.getDirection(map);
+  }
+
+
+}])
