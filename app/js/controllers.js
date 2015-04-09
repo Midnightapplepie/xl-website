@@ -2,27 +2,44 @@
 
 var website = angular.module('websiteControllers',[]);
 
-website.controller("indexCtrl", function($scope){
- //    function select(ele){
-	// var ele = document.querySelectorAll(ele);
-	// 	if(ele.length > 1){
-	// 		return ele
-	// 	}else{
-	// 		return ele[0]
-	// 	}
-	// }
+website.controller("indexCtrl",["$scope","$location","$window",
+  function($scope, $location, $window){
+  
+  $scope.links=[];
 
-	// angular.element(document).ready(function(){
-	// 	console.log(select('div'))
-	// })
-	$scope.templates = {
-		"carousel": "app/partials/carousel.html",
-		"menu": "app/partials/menu.html",
-		"about": "app/partials/about.html",
-		"storeInfo": "app/partials/storeInfo.html",
+  $scope.templates = [
+                    {name:"carousel",navLink:false,text:""},
+                    {name:"about",navLink:true,text:"About"},
+                    {name:"menu",navLink:true,text:"Menu"},
+                    {name:"storeInfo",navLink:true,text:"Store Hour"}
+                    // {name:"contact",navLink:true,text:"Contact"}
+                  ];
 
-	}	
-});
+  for(var i = 0; i < $scope.templates.length; i++){
+    $scope.templates[i].location = "app/partials/" + $scope.templates[i].name + ".html";
+    if ($scope.templates[i].navLink){
+      $scope.links.push($scope.templates[i]);
+    }
+  }
+
+  $scope.goTo = function(template) {
+    var id = template.name;
+    var endLocation = $window.document.getElementById(id).offsetTop;
+
+    console.log(endLocation);
+    // $location.hash(id);
+    $window.scrollTo(0,endLocation);
+    // if ($location.hash() !== newHash) {
+    //   console.log($location.hash());
+    //   $location.hash('anchor' + template.name);
+    // } else {
+    //   // call $anchorScroll() explicitly,
+    //   // since $location.hash hasn't changed
+    //   $anchorScroll();
+    // }
+  };
+
+}]);
 
 //--------------------------Carousel-------------------------------------------
 website.controller("carouselCtrl",function($scope){
@@ -36,7 +53,7 @@ website.controller("carouselCtrl",function($scope){
 
 
 //--------------------------Menu-------------------------------------------
-website.controller("menuCtrl",['$scope','$http',function($scope,$http){
+website.controller("menuCtrl",function($scope,$http){
 	var menu = $scope.menu; 
 	$scope.activeCategory;
 	$scope.categories;
@@ -56,7 +73,7 @@ website.controller("menuCtrl",['$scope','$http',function($scope,$http){
 	}	
 
 
-}])
+})
 //--------------------------storeInfo-------------------------------------------
 website.controller("storeInfoCtrl",function($scope){
 	var lunchHour="11:30 to 2:30";

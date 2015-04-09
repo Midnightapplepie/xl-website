@@ -20,17 +20,12 @@
 		<div class="page-header">
 			<div class="container-fluid">
 				<ul class = "nav navbar-nav navbar-right">
-					<li><a href="app/partials/carousel.html">About</a></li>
-					<li><a href="#">Menu</a></li>
-					<li><a href="#">Store Hour</a></li>
-					<li><a href="#">Contact</a></li>
+					<li ng-repeat="link in links" ng-click="goTo(link)"><a href="#{{link.name}}">{{link.text}}</a></li>
 				</ul>
 			</div>
+    </div>
 		</div id="content">
-			<div id="carousel" ng-include="templates.carousel"></div>
-			<div id="about" ng-include = "templates.about"></div>
-			<div id="menu" ng-include="templates.menu"></div>
-			<div id="storeInfo" ng-include="templates.storeInfo"></div>
+			<div ng-repeat="template in templates" id="{{template.name}}" ng-include="template.location"></div>
 		</div>
 	</div>
 </body>
