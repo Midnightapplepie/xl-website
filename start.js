@@ -4,6 +4,7 @@ var bodyParser = require('body-parser');
 var parse = require('csv-parse');
 var fs = require('fs');
 var request = require('request');
+var helper = require('./helper');
 
 
 var app = express();
@@ -11,13 +12,13 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 app.use(bodyParser.urlencoded({ extended: true}));
 app.use(bodyParser.json());
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://localhost:8080");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-  next();
-});
+app.use(express.static(path.join(__dirname, 'app')));
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
 
-//perpare menu
 var menu={
 	"appetizer":[],
 	"soup":[],
@@ -41,6 +42,9 @@ var parser = parse({columns: true}, function(err,data){
 
 fs.createReadStream('./app/menu/menu.csv').pipe(parser)
 
+app.get('/',function(request,response){
+	response.sendFile(__dirname + '/index.html')
+})
 
 
 app.get('/menu',function(request, response){
@@ -52,6 +56,19 @@ app.get('/menu',function(request, response){
 	}
 
 	response.json({menu: menu, categories: categories});
+})
+
+app.post('/contact',function(request,response){
+	helper.transporter().sendMail(
+		helper.mailOptions(
+			request.body.data),
+		function(error,info){
+			if(error){
+				response.send("Message Failed")
+			}else{
+				response.send('Message sent!')
+			}
+	})
 })
 
 

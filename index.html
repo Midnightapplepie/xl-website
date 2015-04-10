@@ -2,32 +2,43 @@
 <html lang="en" ng-app="xiaoLoong">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Xiao Loong/title></title>
-  <link rel="stylesheet" href="app/css/app.css">
+  <link rel="stylesheet" href="css/app.css">
   <!-- <link rel="stylesheet" href="app/css/bootstrap/bootstrap-theme.min.css"> -->
   <!-- <link rel="stylesheet" href="app/css/bootstrap/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-  <script src="app/angular/angular.js"></script>
+  <script src="angular/angular.js"></script>
   <!-- <script src="app/angular/angular.min.js"></script> -->
-  <script src="app/angular/ui-bootstrap-tpls-0.9.0.js"></script>
+  <script src="angular/ui-bootstrap-tpls-0.9.0.js"></script>
   <!-- <script src="app/angular/ui-bootstrap-tpls-0.9.0.min.js"></script> -->
   <!-- <script src="app/angular/angular-route.js"></script> -->
-  <script src="app/js/app.js"></script>
-  <script src="app/js/services.js"></script>
-  <script src="app/js/controllers.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
 </head>
 <body ng-controller="indexCtrl">
 	<div class="container">
-		<div class="page-header">
-			<div class="container-fluid">
+		<div class="header po-fx desktop container">
 				<ul class = "nav navbar-nav navbar-right">
 					<li ng-repeat="link in links" ng-click="goTo(link)"><a href="#{{link.name}}">{{link.text}}</a></li>
 				</ul>
-			</div>
     	</div>
-		</div id="content">
+
+    	<div class="mobile po-fx header container">
+			<div class = "btn-group-vertical center-block">
+	    		<div class="btn btn-default btn-block" ng-click="toggleNav()">
+					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+	    		</div>
+				<div class="btn btn-default btn-block" ng-repeat="link in links" ng-click="goTo	(link)" ng-show="openNav"><a href="#{{link.name}}">{{link.text}}</a></div>
+				</div>
+
+    	</div>
+    	<div class="container header"></div>
+		<div id="content container">
 			<div ng-repeat="template in templates" id="{{template.name}}" ng-include="template.location"></div>
 		</div>
+
 	</div>
 </body>
