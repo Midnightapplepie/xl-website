@@ -1,0 +1,22 @@
+<div class="modal-header">
+	<ol class="list-inline text-center">
+		<div class="modal-title">
+			<h2>Menus</h2>
+			<button class="btn btn-danger btn-sm menu-close" ng-click="close()">Close</button>
+		</div>
+		<li ng-repeat="category in categories">
+			<a href="" ng-click="selectCategory(category)">{{category.name}} | </a>
+		</li>
+	</ol>
+</div>
+<div class="modal-body">
+	<div ng-repeat="item in activeCategory" class="col-md-11 col-sm-11 col-xs-11 center-block menu-item">
+		<div class="row">
+			<h4 class="col-xs-9 text-left">{{item.name}}</h4>
+			<h5 class="col-xs-3 text-right">{{item.price}}</h5>
+		</div>
+		<div class="row">
+			<p class="col-xs-12">{{item.description}}</p>
+		</div>
+	</div>
+</div>

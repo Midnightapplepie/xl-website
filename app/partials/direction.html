@@ -1,0 +1,16 @@
+<div class="modal-header">
+	<h3 class="modal-title">Direction</h3>
+	<button class="btn btn-danger btn-sm menu-close" ng-click="close()">Close</button>
+</div>
+<div class="modal-body">
+	<div class="panel">
+		<h4>Summary:</h4>
+		<div> Start from: {{direction.start}}</div>
+		<div> Destination: {{direction.end}}</div>
+		<div> Distance: {{direction.distance}}</div>
+		<div> Duration: {{direction.duration}}</div>
+	</div>
+	<ul class="list-group">
+		<li ng-repeat="step in steps" ng-bind-html="step" class="list-group-item"></li>
+	</ul>
+</div>

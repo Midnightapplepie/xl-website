@@ -9,6 +9,7 @@
   <!-- <link rel="stylesheet" href="app/css/bootstrap/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="angular/angular.js"></script>
+  <script src="angular/angular-sanitize.min.js"></script>
   <!-- <script src="app/angular/angular.min.js"></script> -->
   <script src="angular/ui-bootstrap-tpls-0.9.0.js"></script>
   <!-- <script src="app/angular/ui-bootstrap-tpls-0.9.0.min.js"></script> -->
@@ -22,7 +23,7 @@
 	<div class="container">
 		<div class="header po-fx desktop container">
 				<ul class = "nav navbar-nav navbar-right">
-					<li ng-repeat="link in links" ng-click="goTo(link)"><a href="#{{link.name}}">{{link.text}}</a></li>
+					<li ng-repeat="template in templates" ng-click="goTo(template)"><a href="#{{template.name}}">{{template.text}}</a></li>
 				</ul>
     	</div>
 
@@ -31,13 +32,16 @@
 	    		<div class="btn btn-default btn-block" ng-click="toggleNav()">
 					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 	    		</div>
-				<div class="btn btn-default btn-block" ng-repeat="link in links" ng-click="goTo	(link)" ng-show="openNav"><a href="#{{link.name}}">{{link.text}}</a></div>
+				<div class="btn btn-default btn-block" ng-repeat="template in templates" ng-click="goTo(template)" ng-show="openNav"><a href="#{{template.name}}">{{template.text}}</a></div>
 				</div>
 
     	</div>
     	<div class="container header"></div>
-		<div id="content container">
-			<div ng-repeat="template in templates" id="{{template.name}}" ng-include="template.location"></div>
+		<div id="content" class="container">
+			<div ng-repeat="template in templates" id="{{template.name}}">
+        <div ng-include="template.location" class="row"></div>
+        <div class="section-break"></div>
+      </div>
 		</div>
 
 	</div>

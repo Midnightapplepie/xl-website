@@ -1,8 +1,7 @@
 <div ng-controller="storeInfoCtrl">
 	<h3 class="text-center">Store Hour</h3>
 	<div ng-repeat="info in storeHour" class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
+		<div class="col-md-8 center-block">
 			<div class="col-xs-4 col-md-4 text-left">{{info.day}}</div>
 			<div class="col-xs-4 col-md-4 text-center">{{info.lunchTime}}</div>
 			<div class="col-xs-4 col-md-4 text-right">{{info.dinnerTime}}</div>
@@ -10,8 +9,7 @@
 	</div>
 	<br>
 	<div class="row text-center">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
+		<div class="col-md-10 center-block">
 			<p class="bg-info">Phone: 415-753-5678</p>
 			<br>
 			<p>Address</p>
@@ -20,11 +18,9 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-1"></div>
-		<div class="col-md-10">
+		<div class="col-md-10 center-block">
 			<button class="btn btn-info btn-block" ng-click="getDirection()">Get Direction</button>
 			<div id="map-canvas" class="map center-block"></div>
 		</div>
 	</div>
 </div>
-<div class="section-break"></div>

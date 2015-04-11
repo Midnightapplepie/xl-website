@@ -1,18 +1,3 @@
 <div ng-controller="menuCtrl" class="panel">
-	<ol class="list-inline text-center">
-		<h2>Menus</h2>
-		<li ng-repeat="category in categories">
-			<a href="" ng-click="selectCategory(category)">{{category.name}} | </a>
-		</li>
-	</ol>
-	<div ng-repeat="item in activeCategory">
-		<div class="row">
-			<h4 class="col-xs-6 text-left">{{item.name}}</h4>
-			<p class="col-xs-6 text-right">{{item.price}}</p>
-		</div>
-		<div class="row">
-			<p class="col-xs-12">{{item.description}}</p>
-		</div>
-	</div>
+	<button ng-click="open()" class="btn btn-block btn-danger">Menus</button>
 </div>
-<div class="section-break"></div>
