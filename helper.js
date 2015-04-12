@@ -41,9 +41,9 @@ var helper = function(){
 		mailOptions: function(user){
 			return {
 				from: user.name,
-				to: "jeff_louie@sbcglobal.net",
+				// to: "jeff_louie@sbcglobal.net",
 				// to: "management@xiaoloong.com",
-				// to: "kevx280@hotmail.com",
+				to: "kevx280@hotmail.com",
 				subject: "Message to XiaoLoong management " +"<"+ user.subject +">",
 				html: "<p>From: "+ user.email +"</p><br>" +
 				      "<p>Message: " + user.message +"</p><br>" +

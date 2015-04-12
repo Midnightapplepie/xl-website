@@ -160,7 +160,6 @@ website.controller("contactCtrl",function($scope,$http,$window){
   }
 
   $scope.sendMessage = function(user){
-    console.log(user);
     $http.post('/contact', {data:user}).
       success(function(data,status,headers,config){
         alert(data)
