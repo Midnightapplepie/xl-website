@@ -1,3 +1,16 @@
+html{
+	background: url(../images/tree.jpg) no-repeat center center fixed;
+	overflow-x:hidden;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body{
+	background: rgb(0,0,0);
+	background: rgba(0,0,0,0.8) !important;
+}
 .map{
 	height: 500px;
 }
@@ -10,7 +23,9 @@
 		display: none;
 	}
 	.header{
-		width: 96%;
+		width: 100vw !important;
+		margin-left: 0 !important;
+		margin-right: 0 !important; 
 	}
 }
 
@@ -26,16 +41,17 @@
 .header{
 	min-height: 8vh;
 	height: auto;
-	padding: 3vh 0vh 1vh 0vh;
+	padding: 3vh 0vh 1vmax 0vh;
 	border-bottom: solid 1px #9CADB2 ;
-	margin-bottom: 2vh; 
-	z-index: 1;
-	background: white;
+	margin-bottom: 2vmax; 
+	z-index: 100;
 	text-align: right;
 }
 
 .po-fx{
 	position: fixed;
+	right: 0;
+	left: 0;
 }
 
 .section-break{
@@ -57,6 +73,42 @@
 	border-bottom: solid black 1px; 
 }
 
+.bottom-border{
+	padding: 3px 0;
+	border-bottom: solid white 1px;
+}
+
+#about{
+	background: rgba(222,190,148);
+	background: rgba(222,190,148,0.4);
+}
+
+.bg-black{
+	background: black;
+}
+
+.bg-red{
+	background: #7F1D1A;
+}
+
+.mobile-nav{
+	background: rgb(127,29,26) !important;
+	color: white !important;
+}
+
+.mobile-nav:hover{
+	background: rgb(207,63,63) !important;
+}
+
+.mobile-nav a:hover{
+	color: white !important;
+	text-decoration: none !important;
+}
+
+.color-wht{
+	color: white;
+}
+
 
 /*.max-h-96vh{
 	max-height: 94vh;
@@ -73,3 +125,6 @@
 .max-h-70vh{
 	max-height: 70vh;
 }*/
+.template{
+	padding: 4vmax 3vmax;
+}

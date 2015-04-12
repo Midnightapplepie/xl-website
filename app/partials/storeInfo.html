@@ -1,24 +1,28 @@
-<div ng-controller="storeInfoCtrl">
+<div ng-controller="storeInfoCtrl" class="col-md-10 center-block color-wht">
 	<h3 class="text-center">Store Hour</h3>
 	<div ng-repeat="info in storeHour" class="row">
-		<div class="col-md-8 center-block">
-			<div class="col-xs-4 col-md-4 text-left">{{info.day}}</div>
-			<div class="col-xs-4 col-md-4 text-center">{{info.lunchTime}}</div>
-			<div class="col-xs-4 col-md-4 text-right">{{info.dinnerTime}}</div>
+		<div class="col-md-10 center-block">
+			<div classs="row">
+				<div class="col-xs-4 col-md-4 text-left">{{info.day}}</div>
+				<div class="col-xs-4 col-md-4 text-center">{{info.lunchTime}}</div>
+				<div class="col-xs-4 col-md-4 text-right">{{info.dinnerTime}}</div>
+			</div>
+			<div class="row bottom-border"></div>
 		</div>
 	</div>
 	<br>
 	<div class="row text-center">
-		<div class="col-md-10 center-block">
-			<p class="bg-info">Phone: 415-753-5678</p>
+		<div class="col-md-12 center-block">
+			<p>Phone: 415-753-5678</p>
 			<br>
 			<p>Address</p>
 			<p>250 West Portal Avenue</p>
 			<p>San Francisco, CA 9412</p>
 		</div>
 	</div>
+	<br>
 	<div class="row">
-		<div class="col-md-10 center-block">
+		<div class="col-md-12 center-block">
 			<button class="btn btn-info btn-block" ng-click="getDirection()">Get Direction</button>
 			<div id="map-canvas" class="map center-block"></div>
 		</div>

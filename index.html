@@ -5,42 +5,49 @@
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Xiao Loong/title></title>
   <link rel="stylesheet" href="css/app.css">
-  <!-- <link rel="stylesheet" href="app/css/bootstrap/bootstrap-theme.min.css"> -->
-  <!-- <link rel="stylesheet" href="app/css/bootstrap/bootstrap.min.css"> -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <script src="angular/angular.js"></script>
-  <script src="angular/angular-sanitize.min.js"></script>
   <!-- <script src="app/angular/angular.min.js"></script> -->
+  <script src="angular/angular-sanitize.min.js"></script>
   <script src="angular/ui-bootstrap-tpls-0.9.0.js"></script>
   <!-- <script src="app/angular/ui-bootstrap-tpls-0.9.0.min.js"></script> -->
   <!-- <script src="app/angular/angular-route.js"></script> -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
   <script src="js/app.js"></script>
   <script src="js/services.js"></script>
   <script src="js/controllers.js"></script>
-  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?"></script>
 </head>
 <body ng-controller="indexCtrl">
-	<div class="container">
-		<div class="header po-fx desktop container">
-				<ul class = "nav navbar-nav navbar-right">
-					<li ng-repeat="template in templates" ng-click="goTo(template)"><a href="#{{template.name}}">{{template.text}}</a></li>
-				</ul>
-    	</div>
+	<div class="container-fluid">
+		<div class="header desktop container po-fx bg-black">
+			<ul class = "nav navbar-nav navbar-right">
+				<li ng-repeat="template in templates" ng-click="goTo(template)">
+          <a href="#{{template.name}}" class="color-wht">
+            <strong>{{template.text}}</strong>
+          </a>
+        </li>
+			</ul>
+    </div>
 
-    	<div class="mobile po-fx header container">
+    <div class="mobile po-fx header container bg-black">
 			<div class = "btn-group-vertical center-block">
-	    		<div class="btn btn-default btn-block" ng-click="toggleNav()">
-					<span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+	    		<div class="btn btn-default btn-block mobile-nav" ng-click="toggleNav()">
+					  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
 	    		</div>
-				<div class="btn btn-default btn-block" ng-repeat="template in templates" ng-click="goTo(template)" ng-show="openNav"><a href="#{{template.name}}">{{template.text}}</a></div>
-				</div>
+				  <div class="btn btn-default btn-block mobile-nav" ng-repeat="template in templates" ng-click="goTo(template)" ng-show="openNav">
+            <a href="#{{template.name}}" class="color-wht">
+              <strong>{{template.text}}</strong>
+            </a>
+          </div>
+			</div>
+    </div>
+    
+    <div class="container header"></div>
 
-    	</div>
-    	<div class="container header"></div>
+
 		<div id="content" class="container">
 			<div ng-repeat="template in templates" id="{{template.name}}">
-        <div ng-include="template.location" class="row"></div>
-        <div class="section-break"></div>
+        <div ng-include="template.location" class="row template"></div>
       </div>
 		</div>
 
