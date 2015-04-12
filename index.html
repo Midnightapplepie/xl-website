@@ -30,26 +30,25 @@
     </div>
 
     <div class="mobile po-fx header container bg-black">
-			<div class = "btn-group-vertical center-block">
-	    		<div class="btn btn-default btn-block mobile-nav" ng-click="toggleNav()">
-					  <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
-	    		</div>
-				  <div class="btn btn-default btn-block mobile-nav" ng-repeat="template in templates" ng-click="goTo(template)" ng-show="openNav">
-            <a href="#{{template.name}}" class="color-wht">
+      <div class = "btn-group-vertical center-block">
+          <div class="btn btn-default btn-block mobile-nav" ng-click="toggleNav()">
+            <span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+          </div>
+          <div class="btn btn-default btn-block mobile-nav" ng-repeat="template in templates" ng-click="goTo(template)" ng-show="openNav">
+            <a href="#{{template.name}}" class="color-wht {{template.name+'link'}}">
               <strong>{{template.text}}</strong>
             </a>
           </div>
-			</div>
+      </div>
     </div>
     
     <div class="container header"></div>
 
 
-		<div id="content" class="container">
-			<div ng-repeat="template in templates" id="{{template.name}}">
+    <div id="content" class="container">
+      <div ng-repeat="template in templates" id="{{template.name}}">
         <div ng-include="template.location" class="row template"></div>
       </div>
-		</div>
-
-	</div>
+    </div>
+  </div>
 </body>

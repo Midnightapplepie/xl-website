@@ -1,9 +1,9 @@
 'use strict';
 
 var website = angular.module('websiteControllers',[]);
-
-website.controller("indexCtrl",["$scope","$location","$window",
-  function($scope, $location, $window){
+  
+website.controller("indexCtrl",["$scope","$location","$window",'$controller',
+  function($scope, $location, $window,$controller){
   
   $scope.templates = [
                     {name:"about",text:"About"},
@@ -17,14 +17,28 @@ website.controller("indexCtrl",["$scope","$location","$window",
     $scope.templates[i].location = "partials/" + $scope.templates[i].name + ".html";
   }
 
+  function isMenu(template){
+    if(template.name === "menus"){
+      var menu = $scope.$new();
+      $controller('menuCtrl',{$scope: menu});
+      menu.open();
+      return true;
+    }
+    return false;
+  }
+
   $scope.goTo = function(template) {
-    $scope.toggleNav();
-    var vh = $window.innerHeight;
-    var id = template.name;
-    if(template.name === "about"){
-      $window.scrollTo(0,0);
+    if(isMenu(template)){
+      return false
     }else{
-      $window.scrollTo(0,$window.document.getElementById(id).offsetTop - 0.08*vh);
+      $scope.toggleNav();
+      var vh = $window.innerHeight;
+      var id = template.name;
+      if(template.name === "about"){
+        $window.scrollTo(0,0);
+      }else{
+        $window.scrollTo(0,$window.document.getElementById(id).offsetTop - 0.08*vh);
+      }
     }
   };
 
