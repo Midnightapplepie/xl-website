@@ -38,7 +38,7 @@ body{
 	min-height: 8vh;
 	height: auto;
 	padding: 3vh 0vh 1vmax 0vh;
-	border-bottom: solid 1px #9CADB2 ;
+	border-bottom: solid 1px #6B4141 ;
 	margin-bottom: 2vmax; 
 	z-index: 100;
 	text-align: right;
@@ -75,21 +75,50 @@ body{
 }
 
 #about{
-	background: rgba(222,190,148);
-	background: rgba(222,190,148,0.4);
+	background-color: rgb(222,190,148);
+	background-color: rgba(222,190,148,0.4);
+}
+
+
+.bg-tan{
+	background: rgb(222,190,148);
+	/*background-color: rgba(222,190,148,0.5);*/
+}
+
+.bg-dk-tan{
+	background: #D1B38B;
 }
 
 .bg-black{
 	background: black;
 }
 
+.op-8{
+	opacity: 0.8;
+}
+
 .bg-red{
 	background: #7F1D1A;
+}
+
+.color-red{
+	color: #9C2421;
+}
+
+.border-top-rad{
+	border-top-left-radius: inherit;
+	border-top-right-radius: inherit;
+}
+
+.border-bottom-rad{
+	border-bottom-left-radius: inherit;
+	border-bottom-right-radius: inherit;
 }
 
 .mobile-nav{
 	background: rgb(127,29,26) !important;
 	color: white !important;
+	border-color: rgb(94,30,29) !important;
 }
 
 .mobile-nav:hover{
