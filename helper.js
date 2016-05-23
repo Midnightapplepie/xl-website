@@ -32,8 +32,8 @@ var helper = function(){
 			return  nodemailer.createTransport({
 							service: 'Gmail',
 							auth:{
-								user: "xiaoloongcontact@gmail.com",
-								pass: "xl4157535678"
+								user: "x@gmail.com",
+								pass: "x"
 							}
 						})
 			},
@@ -43,7 +43,7 @@ var helper = function(){
 				from: user.name,
 				// to: "jeff_louie@sbcglobal.net",
 				// to: "management@xiaoloong.com",
-				to: "kevx280@hotmail.com",
+				to: "kevx@email.com",
 				subject: "Message to XiaoLoong management " +"<"+ user.subject +">",
 				html: "<p>From: "+ user.email +"</p><br>" +
 				      "<p>Message: " + user.message +"</p><br>" +
